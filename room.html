@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="room.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+        <script> 
+            const firebaseConfig = {
+            apiKey: "AIzaSyC47vlWDBPMvfZUrQp_etXB1V6_nVodtko",
+            authDomain: "hyperchatter-1e324.firebaseapp.com",
+            projectId: "hyperchatter-1e324",
+            storageBucket: "hyperchatter-1e324.appspot.com",
+            messagingSenderId: "18058539456",
+            appId: "1:18058539456:web:0a303609d4df0356e89825"
+          };
+    
+            firebase.initializeApp(firebaseConfig);
+            </script>
+    </head>
+    <body id="background">
+        <button id="logout_btn" class="glyphicon glyphicon-log-out  btn btn-primary" onclick="logout()">Logout</button>
+        <center>
+        <h1 id="hyperchatter_h1"> HyperChatter </h1>
+        <h2 id="welcome_h2"></h2>
+        <br>
+        <button id="create_room_btn" onclick="create_room()" class="btn btn-warning"> Create a New Room </button>
+        <button id="join_room_btn" onclick="join_room()" class="btn btn-warning"> Join a Exisiting Room </button>
+        </center>
+        <script src="room.js" async defer></script>
+    </body>
+</html>

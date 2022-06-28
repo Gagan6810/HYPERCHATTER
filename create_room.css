@@ -1,0 +1,34 @@
+#body{
+    background-color:darkcyan;
+}
+
+#hyperchatter_h1{
+    font-family: 'Lavishly Yours', cursive;
+    font-size: 75px;
+    color:darkblue;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#logout_btn{
+    margin-left: 85%;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#welcome_h2{
+    color: darkblue;
+    margin-bottom:30px;
+}
+
+#input_room{
+    width:85%;
+    margin-top:25px;
+}
+
+#create_room_btn{
+    width: 100px;
+    height: 55px;
+}
